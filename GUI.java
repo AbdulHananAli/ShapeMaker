@@ -43,7 +43,7 @@ public class GUI extends Application {
 		plus.setPrefSize(100, 20);
 		
 		//lambda i.e. "e->" set the event handling if the button is pushed
-		plus.setOnAction( e->{container.getChildren().add(Circle = sm.getShape());//makes circle on the interface
+		plus.setOnAction( e->{container.getChildren().add(Circle = sm.getShape());//makes a circle on the interface
 		
 		//add event handlers hook-up for both mouse pressed and Dragged 
 		Circle.setOnMousePressed(MousePressed);
@@ -60,6 +60,7 @@ public class GUI extends Application {
 		
 		//add title to window
 		Window.setTitle("ShapeMaker");
+		
 		//make window visible 
 		Window.show();
 	}
@@ -71,7 +72,7 @@ public class GUI extends Application {
 	        public void handle(MouseEvent mouseEvent)
 	        {
 	            //Initialise the original coordinates 
-	        	orgSceneX = mouseEvent.getSceneX();
+	            orgSceneX = mouseEvent.getSceneX();
 	            orgSceneY = mouseEvent.getSceneY();
 	            
 	            //gets the coordinates for the movement made
@@ -87,7 +88,7 @@ public class GUI extends Application {
 	        public void handle(MouseEvent mouseEvent)
 	        {
 	            //gets the total of the coordinates difference 
-	        	double offsetX = mouseEvent.getSceneX() - orgSceneX;
+	            double offsetX = mouseEvent.getSceneX() - orgSceneX;
 	            double offsetY = mouseEvent.getSceneY() - orgSceneY;
 	            
 	            //gets the current location coordinates according to previous original location 
