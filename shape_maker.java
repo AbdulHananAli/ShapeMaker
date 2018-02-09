@@ -1,7 +1,6 @@
 package ShapeMaker;
 
 import java.util.Random;
-
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
@@ -33,17 +32,16 @@ public class shape_maker {
 	}
 	//creates, initialises and then returns a circle
 	private Circle createCircle() {
-        Circle circle = new Circle(size);//takes the size from the global variables
-        return circle;
-    }
+		Circle circle = new Circle(size);//takes the size from the global variables
+		return circle;
+    	}
 	
 	//returns a random paint i.e. colour value for fill
 	private Paint randomColour() {
-	        Random random = new Random(); // makes a random object
+	     	Random random = new Random(); // makes a random object
 	        int r = random.nextInt(255); //hold a random int value from 0 to 255 
 	        int g = random.nextInt(255);
 	        int b = random.nextInt(255);
 	        return Color.rgb(r, g, b);
-	    }
-	
+	}
 }
